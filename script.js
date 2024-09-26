@@ -58,9 +58,9 @@ yesButton.addEventListener("mousemove", function () {
 });
  let count=0;
 const title_list=[
-  "Không Bao Giờ",
-    "Anh bicc lỗi rồi ạa",
-    "Mong bé tha lỗi choo anhh :((",
+  "Đây là bức ảnh đầu tiên em với chị chụp với nhau",
+    "Đây là bó hoa đầu tiên em tặng chị",
+    "Đây là bức ảnh mà chị tự lấy máy em chụp đó:((",
     "Anhh saii rồi , anhh đáng trách ạ",
     "Bé đừng giận anhh nữa nhoo",
     "Anhhh iu bé nhắm nhunnn đóoooo",

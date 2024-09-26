@@ -65,7 +65,7 @@ const title_list=[
     "Bé đừng giận anhh nữa nhoo",
     "Anhhh iu bé nhắm nhunnn đóoooo",
   "hahaa",
-  "câu 8",
+  "chị yêu ơi ấn vào đây đi ạ",
   "câu 9",
 
 ]

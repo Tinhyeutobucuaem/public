@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 10;
+const MAX_IMAGES = 9;
 
 let play = true;
 let noCount = 0;
@@ -21,7 +21,7 @@ noButton.addEventListener("click", function () {
     changeImage(imageIndex);
     resizeYesButton();
     
-    if (noCount == 10) {
+    if (noCount == 9) {
       play = false;
       document.querySelector(".btn.btn--no").classList.add("hidden");
     }
@@ -34,7 +34,7 @@ yesButton.addEventListener("click", function () {
     changetitle()
     changeImage(imageIndex);
   }
-  if (noCount == 10) {
+  if (noCount == 9) {
     play = false;
     document.querySelector(".btn.btn--no").classList.add("hidden");
     handleYesClick()
@@ -67,7 +67,7 @@ const title_list=[
   "câu 7",
   "câu 8",
   "câu 9",
-  "câu 10",
+
 ]
 function changetitle() {
   titleElement.innerHTML=title_list[count];
@@ -88,7 +88,7 @@ function resizeYesButton() {
 
 
   const newFontSize = fontSize * 1.2;
-  if(newFontSize>200){
+  if(newFontSize>50){
     yesButton.style.fontSize = "15px";
     return;
   }

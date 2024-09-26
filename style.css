@@ -16,12 +16,12 @@ body {
 
 body::before {
   content: "";
-  background-image: url(https://dunghm98.github.io/img/puung3.jpg);
+  background-image: url(img/z5869666587014_c0a3433c90fce1b98d6db06a2e6b2231.jpg);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -90%;
   background-size: cover;
   background-position: center;
   z-index: -1;

@@ -44,7 +44,9 @@ body::before {
   width: 30rem;
   height: 30rem;
   margin-bottom: 2rem;
+  object-fit: cover; /* hoặc sử dụng contain nếu muốn toàn bộ ảnh hiển thị */
 }
+
 
 .title {
   font-size: 3.6rem;

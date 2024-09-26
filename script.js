@@ -64,7 +64,7 @@ const title_list=[
     "Anhh saii rồi , anhh đáng trách ạ",
     "Bé đừng giận anhh nữa nhoo",
     "Anhhh iu bé nhắm nhunnn đóoooo",
-  "câu 7",
+  "hahaa",
   "câu 8",
   "câu 9",
 

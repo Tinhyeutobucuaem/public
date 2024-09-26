@@ -40,7 +40,22 @@ yesButton.addEventListener("click", function () {
     handleYesClick()
 } 
 });
+yesButton.addEventListener("mousemove", function () {
+  if (play) {
+    const maxX = window.innerWidth - yesButton.offsetWidth;
+    const maxY = window.innerHeight - yesButton.offsetHeight;
 
+    // Tạo vị trí ngẫu nhiên trong phạm vi của cửa sổ
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    // Cập nhật vị trí của nút "No"
+    yesButton.style.position = "absolute";
+    yesButton.style.left = `${randomX}px`;
+    yesButton.style.top = `${randomY}px`;
+    resizeYesButton()
+  }
+});
  let count=0;
 const title_list=[
   "Không Bao Giờ",
@@ -67,8 +82,11 @@ function handleYesClick() {
 function resizeYesButton() {
   const computedStyle = window.getComputedStyle(yesButton);
   const fontSize = parseFloat(computedStyle.getPropertyValue("font-size"));
-  const newFontSize = fontSize * 1.3;
-
+  const newFontSize = fontSize * 1.2;
+  if(newFontSize>200){
+    yesButton.style.fontSize = "15px";
+    return;
+  }
   yesButton.style.fontSize = `${newFontSize}px`;
 }
 

@@ -24,6 +24,7 @@ noButton.addEventListener("click", function () {
     if (noCount == 9) {
       play = false;
       document.querySelector(".btn.btn--no").classList.add("hidden");
+      yesButton.textContent="chị ơi, đây là món quà của em, chị ấn zô đây nhá";
     }
   }
 });

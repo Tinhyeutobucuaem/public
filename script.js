@@ -46,15 +46,33 @@ yesButton.addEventListener("mousemove", function () {
     const maxX = window.innerWidth - yesButton.offsetWidth;
     const maxY = window.innerHeight - yesButton.offsetHeight;
 
-    // Tạo vị trí ngẫu nhiên trong phạm vi của cửa sổ
-    const randomX = Math.floor(Math.random() * maxX);
-    const randomY = Math.floor(Math.random() * maxY);
+    // Lấy vị trí và kích thước của ảnh
+    const catRect = catImg.getBoundingClientRect();
 
-    // Cập nhật vị trí của nút "No"
+    let randomX, randomY;
+    let isOverlapping = true;
+
+    // Tạo vị trí ngẫu nhiên cho đến khi không nằm trong khu vực ảnh
+    while (isOverlapping) {
+      // Tạo vị trí ngẫu nhiên trong phạm vi của cửa sổ
+      randomX = Math.floor(Math.random() * maxX);
+      randomY = Math.floor(Math.random() * maxY);
+
+      // Kiểm tra xem vị trí nút có nằm trong vùng ảnh không
+      if (
+        !(randomX + yesButton.offsetWidth > catRect.left && randomX < catRect.right &&
+          randomY + yesButton.offsetHeight > catRect.top && randomY < catRect.bottom)
+      ) {
+        isOverlapping = false;
+      }
+    }
+
+    // Cập nhật vị trí của nút "Yes"
     yesButton.style.position = "absolute";
     yesButton.style.left = `${randomX}px`;
     yesButton.style.top = `${randomY}px`;
-    resizeYesButton()
+
+    resizeYesButton(); // Gọi hàm này nếu bạn có hàm resizeYesButton
   }
 });
  let count=0;

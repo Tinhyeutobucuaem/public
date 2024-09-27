@@ -62,12 +62,12 @@ const title_list=[
   "Tada tada, Tình yêu của em ỏ. Đây có lẽ là bức ảnh đầu tiên em với chị chụp với nhau. Thoáng qua đến giờ cũng ngót nghét chục năm rồi ấy ọ",
     "Tình yêu có nhớ ngày em tặng chị bó hoa đầu tiên là ngày bao nhiêu hôngg. Giờ nhìn lại em thấy bó hoa này vẫn nhỏ so với sự xinh đẹp của tình yêu",
     "Em chẳng biết từ khi nào nữa, có lẽ do thói quen, mỗi lần gặp chị em đều muốn chụp ảnh, lấp đầy bộ nhớ điện thoại và trong tim em :v hehee ",
-    "Anhh saii rồi , anhh đáng trách ạ",
-    "Bé đừng giận anhh nữa nhoo",
-    "Anhhh iu bé nhắm nhunnn đóoooo",
-  "hahaa",
-  "chị yêu ơi ấn vào đây đi ạ",
-  "câu 9",
+    "Ngày sinh nhật của chị, em chẳng biết tặng chị món quà gì, bởi có lẽ chị đã đầy đủ với mọi thứ.",
+    "Nhưng có lẽ 1 cuốn film tua ngược thời gian, với những khung hình cả hai, em luôn đặt ở một vị trí đặc biệt này sẽ là lần đầu tiên và duy nhất em dám làm",
+    "Không phải nó khó, mà là khi em nhìn lại và viết ra, thì em cũng không kìm lòng được, cảm xúc cứ tuôn trào, kỉ niệm cứ ùa về với những cung bậc cảm xúc khó tả",
+  "Ngày sinh nhật của chị, em không chỉ muốn tặng chị một món quà, mà còn muốn mang lại cho chị những kỷ niệm quý giá.",
+  "Hai chị em mình trải qua không biết bao nhiêu khoảng khắc cùng nhau, n",
+  "Ngày hôm nay không chỉ là sinh nhật của chị, mà là ngày chúng ta khẳng định lại tình chị em bất diệt, vượt qua mọi khoảng cách và thời gian..",
 
 ]
 function changetitle() {

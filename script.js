@@ -75,7 +75,7 @@ function changetitle() {
   count = (count + 1) % title_list.length;
 }
 function handleYesClick() {
-  titleElement.innerHTML = "Anh iu bé ,Anh hứa hongg làm bé buồn nữa đouuu :3";
+  titleElement.innerHTML = " Em sẽ luôn ở đây, bên cạnh chị, ủng hộ và yêu thương chị, như cách chị đã luôn bên em. Chúc mừng sinh nhật chị iu- Tình yêu to bự của em";
   buttonsContainer.classList.add("hidden");
   changeVideo("yes");
 }

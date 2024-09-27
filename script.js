@@ -59,9 +59,9 @@ yesButton.addEventListener("mousemove", function () {
 });
  let count=0;
 const title_list=[
-  "Tada tada, Tình yêu của em ỏ. Đây có lẽ là bức ảnh đầu tiên em với chị chụp với nhau. Lúc ấy cả hai kiểu ngây thơ trong sáng, cute phô mai que chị nhở. Nhưng thoáng qua cũng gần chục năm rồi đó tình yêu ạ",
-    "Đây là bó hoa đầu tiên em tặng chị",
-    "Đây là bức ảnh mà chị tự lấy máy em chụp đó:((",
+  "Tada tada, Tình yêu của em ỏ. Đây có lẽ là bức ảnh đầu tiên em với chị chụp với nhau. Thoáng qua đến giờ cũng ngót nghét chục năm rồi ấy ọ",
+    "Tình yêu có nhớ ngày em tặng chị bó hoa đầu tiên là ngày bao nhiêu hôngg. Giờ nhìn lại em thấy bó hoa này vẫn nhỏ so với sự xinh đẹp của tình yêu",
+    "Em chẳng biết từ khi nào nữa, có lẽ do thói quen, mỗi lần gặp chị em đều muốn chụp ảnh, lấp đầy bộ nhớ điện thoại và trong tim em :v hehee ",
     "Anhh saii rồi , anhh đáng trách ạ",
     "Bé đừng giận anhh nữa nhoo",
     "Anhhh iu bé nhắm nhunnn đóoooo",

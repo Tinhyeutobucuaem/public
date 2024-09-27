@@ -49,14 +49,23 @@ yesButton.addEventListener("mousemove", function () {
     // Lấy vị trí và kích thước của ảnh
     const catRect = catImg.getBoundingClientRect();
 
-    let randomX, randomY;
+    // Các vị trí tương ứng với 4 góc màn hình
+    const corners = [
+      { x: 0, y: 0 }, // Góc trên bên trái
+      { x: maxX, y: 0 }, // Góc trên bên phải
+      { x: 0, y: maxY }, // Góc dưới bên trái
+      { x: maxX, y: maxY } // Góc dưới bên phải
+    ];
+
+    let randomCorner, randomX, randomY;
     let isOverlapping = true;
 
-    // Tạo vị trí ngẫu nhiên cho đến khi không nằm trong khu vực ảnh
+    // Chọn vị trí ngẫu nhiên trong 4 góc cho đến khi không trùng với khu vực ảnh
     while (isOverlapping) {
-      // Tạo vị trí ngẫu nhiên trong phạm vi của cửa sổ
-      randomX = Math.floor(Math.random() * maxX);
-      randomY = Math.floor(Math.random() * maxY);
+      // Random vị trí ngẫu nhiên trong 4 góc
+      randomCorner = corners[Math.floor(Math.random() * corners.length)];
+      randomX = randomCorner.x;
+      randomY = randomCorner.y;
 
       // Kiểm tra xem vị trí nút có nằm trong vùng ảnh không
       if (
@@ -75,6 +84,7 @@ yesButton.addEventListener("mousemove", function () {
     resizeYesButton(); // Gọi hàm này nếu bạn có hàm resizeYesButton
   }
 });
+
  let count=0;
 const title_list=[
   "Tada tada, Chị yêu của em ỏ. Đây có lẽ là bức ảnh đầu tiên em với chị chụp với nhau. Thoáng qua đến giờ cũng ngót nghét chục năm rồi ấy ọ",
@@ -106,7 +116,7 @@ function resizeYesButton() {
   
 
 
-  const newFontSize = fontSize * 1.2;
+  const newFontSize = fontSize * 1;
   if(newFontSize>50){
     yesButton.style.fontSize = "15px";
     return;

@@ -55,8 +55,7 @@ body::before {
   background: linear-gradient(45deg, #ffffff, #ffffff); /* Gradient cho màu chữ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Đổ màu cho chữ bằng gradient */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bóng chữ mờ */
-  -webkit-text-stroke: 1px black; /* Viền chữ màu đen */
+  
 }
 
 
